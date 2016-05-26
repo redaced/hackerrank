@@ -15,10 +15,10 @@
 def Insert(head, data):
     
     if (head == None):
-        head = Node(data)
+      head = Node(data)
     else:
-        current = head
-        while (current.next != None):
-            current = current.next
-        current.next = Node(data)
+    	new_node = Node()
+      new_node.data = data
+      new_node.next = head
+      head = new_node
     return head
